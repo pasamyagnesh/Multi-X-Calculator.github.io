@@ -11,6 +11,7 @@
     padding: 0;
 
 }
+
 body{
     background: linear-gradient(to right, #00AAFF,#00FF6C);
 }
@@ -18,9 +19,9 @@ body{
     display: grid;
     justify-content: center;
     align-content: center;
-    min-height: 100vh;
-    grid-template-columns: repeat(4,100px);
-    grid-template-rows: minmax(120px,auto) repeat(5,100px);
+    min-height: 90vh;
+    grid-template-columns: repeat(4,120px);
+    grid-template-rows: minmax(80px,auto) repeat(5,70px);
 
     
  }
@@ -36,4 +37,25 @@ body{
  }
 .span-double{
     grid-column: span 2;
+}
+.output {
+    grid-column: 1/-1;
+    background-color: rgba(0, 0, 0, .75);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+
+}
+.output .previous-operand{
+    color: rgba(255, 255, 255, .75);
+    font-size:1.5 rem 
+    ;
+     
+}
+.output .present-operand{
+    color: white;
+    font-size: 2.5rem;
 }
