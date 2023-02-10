@@ -21,26 +21,56 @@ body{
     justify-content: center;
     align-content: center;
     min-height: 97vh;
+    border-radius: 25px;
     grid-template-columns: repeat(4,120px);
     grid-template-rows: minmax(80px,auto) repeat(5,70px);
 
     
  }
- .container > button{
+ .container .button-span-double:hover{
     cursor: pointer;
     font-size: 2rem;
     border: 0.1px solid rgb(91, 91, 91);
     outline: none;
-    color: white;
+    color: rgb(48, 48, 48);
     background-color: #26242c;
  }
- .container > button:hover{
-    background-color: rgba(38, 38, 38, 0.9);
+ .container .button-span-double:hover{
+    background-color: rgba(29, 123, 0, 0.9);
+    transition-duration: 0.2s;
  }
-.span-double{
+ .container .button:hover{
+    cursor: pointer;
+    font-size: 2rem;
+    border: 0.1px solid rgb(91, 91, 91);
+    outline: none;
+    color: rgb(48, 48, 48);
+    background-color: #26242c;
+ }
+ .container .button:hover{
+    background-color: rgba(95, 95, 95, 0.9);
+    transition-duration: 0.2s;
+ }
+ .container .button-operator:hover{
+    cursor: pointer;
+    font-size: 2rem;
+    border: 0.1px solid rgb(91, 91, 91);
+    outline: none;
+    color: rgb(48, 48, 48);
+    background-color: #26242c;
+ }
+ .container .button-operator:hover{
+    background-color: rgba(129, 92, 0, 0.9);
+    transition-duration: 0.2s;
+ }
+.button-span-double{
     grid-column: span 2;
-    background-color: linear-gradient( to right#ef454d, #9b2281) ;
-    color: #15171c;
+
+
+}
+.button-operator > button:hover{
+    background-color: green;
+
 
 }
 
@@ -58,8 +88,7 @@ body{
 }
 .output .previous-operand{
     color: rgba(255, 255, 255, .75);
-    font-size:1.5 rem 
-    ;
+    font-size:1.5;
      
 }
 .output .present-operand{
