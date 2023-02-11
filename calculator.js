@@ -6,11 +6,14 @@ const previousOperandTextElement = document.querySelectorAll('[data-previous-ope
 const presentOperandTextElement = document.querySelectorAll('[data-present-operand]')
 
 
+ 
+
 
 class calculator {
     constructor(presentOperandTextElement,presentOperandTextElement)
-    this.presentOperandTextElement =previousOperandTextElement
+    this.prevousOperandTextElement =previousOperandTextElement
     this.presentOperandTextElement = presentOperandTextElement
+    this.clear()
 }
 
 clear(){
@@ -29,12 +32,14 @@ chooseOperayion(operation)
 }
 appendNumber()
 {
+    this.presentOperand = number
 
 }
 compute(){
 
 }
 updateDisplay(){
+    this.presentOperandTextElement.innerText = this.presentOperand
 
 }
 
@@ -47,6 +52,10 @@ updateDisplay(){
 
 const calculator =new calculator(presentOperandTextElement,presentOperandTextElement)
 numberButton.forEach(button =>{
+    button.addEventListener('click',() => {
+        calculator.appendNumber(button.innerText)
+        calculator.updateDisplay()
+    })
     
 })
 

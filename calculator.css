@@ -15,68 +15,46 @@
 body{
 
     background-image: linear-gradient(180deg, rgb(255, 255, 255), rgb(255, 209, 247));
+    
 }
 .container {
     display: grid;
     justify-content: center;
     align-content: center;
     min-height: 97vh;
-    border-radius: 25px;
-    grid-template-columns: repeat(4,120px);
-    grid-template-rows: minmax(80px,auto) repeat(5,70px);
+    color: #0576ff;
+    
+    grid-template-columns:150px 150px 150px 200px;
+    
+    grid-template-rows:100px repeat(5,60px);
 
     
  }
- .container .button-span-double:hover{
-    cursor: pointer;
-    font-size: 2rem;
-    border: 0.1px solid rgb(91, 91, 91);
-    outline: none;
-    color: rgb(48, 48, 48);
-    background-color: #26242c;
+ .container > button{
+    color: aliceblue;
+    font-size: 25px;
+    background-color:#23252d;
+    border-color: rgb(95, 95, 95);
+
  }
- .container .button-span-double:hover{
-    background-color: rgba(29, 123, 0, 0.9);
+ .container > button:hover{
+    background-color:#474747;
     transition-duration: 0.2s;
+
  }
- .container .button:hover{
-    cursor: pointer;
-    font-size: 2rem;
-    border: 0.1px solid rgb(91, 91, 91);
-    outline: none;
-    color: rgb(48, 48, 48);
-    background-color: #26242c;
- }
- .container .button:hover{
-    background-color: rgba(95, 95, 95, 0.9);
-    transition-duration: 0.2s;
- }
- .container .button-operator:hover{
-    cursor: pointer;
-    font-size: 2rem;
-    border: 0.1px solid rgb(91, 91, 91);
-    outline: none;
-    color: rgb(48, 48, 48);
-    background-color: #26242c;
- }
- .container .button-operator:hover{
-    background-color: rgba(129, 92, 0, 0.9);
-    transition-duration: 0.2s;
- }
+ 
+
 .button-span-double{
     grid-column: span 2;
 
 
 }
-.button-operator > button:hover{
-    background-color: green;
 
-
-}
 
 
 .output {
     grid-column: 1/-1;
+
     background-color: #15171c;
     display: flex;
     align-items: flex-end;
@@ -87,7 +65,7 @@ body{
 
 }
 .output .previous-operand{
-    color: rgba(255, 255, 255, .75);
+    color: #3bd455;
     font-size:1.5;
      
 }
